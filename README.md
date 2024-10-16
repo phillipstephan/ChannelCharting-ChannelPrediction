@@ -1,4 +1,4 @@
-# ChannelPrediction-ChannelCharting
+# Channel Charting-Based Channel Prediction
 
 This repository contains the source code for [the paper](https://arxiv.org/abs/2410.11486)
 
