@@ -18,10 +18,9 @@ You must execute them in the right order.
 
 * `0_DownloadDatasets.ipynb`: Download parts of the [dichasus-cf0x](https://dichasus.inue.uni-stuttgart.de/datasets/data/dichasus-cf0x/) dataset that we use for training and prediction. Due to the large file size, this dataset is not included in this git repository.
 * `1_DataPreparation.ipynb`: Determine "true" indices of datapoints based on their timestamps, as well as the respective indices for used for training and prediction. Split Training Set and Prediction Set, and save them as `.npy` files.
-* `2_DissimilarityMatrix.ipynb`: Compute the fused dissimilarity matrix (angle delay profile + timestamp-based, learn more about this in [our tutorial](https://dichasus.inue.uni-stuttgart.de/tutorials/tutorial/dissimilarity-metric-channelcharting/)). This dissimilarity matrix is the most important ingredient to dissimilarity metric-based Channel Charting. This step should take a few seconds to a few minutes.
-* `3_ChannelCharting.ipynb`: Train the neural network that implements the forward charting function. Training is based on a Siamese neural network. With GPU acceleration, this should take between a few seconds to a few minutes.
-* `4_ChannelPrediction_ChannelCharting.ipynb`: Our Method -> Predict future CSI based on channel charting. Evaluation of the method with fixed prediction horizon.
-* `5_ChannelPrediction_Wiener.ipynb`: Baseline Method -> Predict future CSI based on a Wiener predictor. Evaluation of the method with fixed prediction horizon.
+* `2_ChannelCharting.ipynb`: Compute the fused dissimilarity matrix (angle delay profile + timestamp-based, learn more about this in [our tutorial](https://dichasus.inue.uni-stuttgart.de/tutorials/tutorial/dissimilarity-metric-channelcharting/)) and train the neural network that implements the forward charting function. Training is based on a Siamese neural network. With GPU acceleration, this should take a few minutes.
+* `3_ChannelPrediction_ChannelCharting.ipynb`: Our Method -> Predict future CSI based on channel charting. Evaluation of the method with fixed prediction horizon.
+* `4_ChannelPrediction_Wiener.ipynb`: Baseline Method -> Predict future CSI based on a Wiener predictor. Evaluation of the method with fixed prediction horizon.
 
 
 ### Other Resources
