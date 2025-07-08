@@ -39,12 +39,11 @@ If you want to reproduce the results based on the same channel chart positions a
 
 ```
 @inproceedings{10978279,
-  author={Stephan, Phillip and Euchner, Florian and Brink, Stephan ten},
-  booktitle={2025 IEEE Wireless Communications and Networking Conference (WCNC)}, 
-  title={Channel Charting-Based Channel Prediction on Real-World Distributed Massive MIMO CSI}, 
+  author={Stephan, Phillip and Euchner, Florian and Brink, Stephan ten}, 
+  title={{Channel Charting-Based Channel Prediction on Real-World Distributed Massive MIMO CSI}},
+  booktitle={2025 IEEE Wireless Communications and Networking Conference (WCNC)},
   year={2025},
   pages={1-6},
-  keywords={Wireless communication;Channel estimation;Massive MIMO;Self-supervised learning;Prediction methods;Aging;Telecommunications;Resource management;Next generation networking;Channel state information;AI;channel aging;channel charting;channel prediction;cell-free;distributed;massive MIMO},
   doi={10.1109/WCNC61545.2025.10978279}}
 ```
 
