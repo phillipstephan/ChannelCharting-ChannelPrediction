@@ -1,10 +1,22 @@
-# Channel Charting-Based Channel Prediction
+# Channel Charting-Based Channel Prediction on Real-World Distributed Massive MIMO CSI
 
-This repository contains the source code for [the paper](https://arxiv.org/abs/2410.11486)
 
-> Phillip Stephan, Florian Euchner, Stephan ten Brink: "Channel Charting-Based Channel Prediction on Real-World Distributed Massive MIMO CSI"
+This repository contains the source code for the results presented in the paper
 
-### Prerequisites
+> <a href="https://ieeexplore.ieee.org/abstract/document/10978279">Phillip Stephan, Florian Euchner, Stephan ten Brink: "Channel Charting-Based Channel Prediction on Real-World Distributed Massive MIMO CSI"</a>
+
+presented at the 2025 IEEE Wireless Communications and Networking Conference (WCNC) in Milan, Italy. A preprint is <a href="https://arxiv.org/abs/2410.11486">available on arXiv</a>.
+
+## Summary
+
+<img style="max-width: 1800px; width: 80%;" src="img/channel_prediction_concept.png">
+
+Although it is considered an important advancement for next-generation wireless systems, distributed massive MIMO suffers from decreasing data rates in user mobility scenarios due to channel aging.
+Channel prediction aims to overcome this issue by predicting future channel state information (CSI) from past observations.
+In the paper, we present a novel channel prediction method based on Channel Charting, a self-supervised method for learning a physically meaningful latent representation of the radio environment (the "channel chart") from similarity relationships within the CSI, which enables the prediction of future CSI due to its inherent inertia.
+Demonstrated on a real-world distributed massive MIMO dataset measured with our [https://dichasus.inue.uni-stuttgart.de/](DICHASUS) channel sounder, Channel Charting-based channel prediction shows higher achievable sum rates for larger prediction horizons compared to a Wiener predictor and the outdated CSI.
+
+## Prerequisites
 Our code is based on Python, TensorFlow, NumPy, SciPy and Matplotlib.
 Source files are provided as Jupyter Notebooks, which can be opened directly here on GitHub or using e.g. [https://jupyter.org/](JupyterLab).
 
@@ -12,7 +24,7 @@ We run our Channel Charting experiments on a JupyterHub server with NVMe storage
 All indications of computation times are measured on this system.
 It should also be possible to run our notebooks on less performant systems.
 
-### Notebooks - Training Procedure
+## How to Use the Code
 The Jupyter Notebooks in this repository are numbered.
 You must execute them in the right order.
 
@@ -23,8 +35,20 @@ If you want to reproduce the results based on the same channel chart positions a
 * `3_ChannelPrediction_ChannelCharting.ipynb`: Our Method -> Predict future CSI based on channel charting. Evaluation of the method with fixed prediction horizon.
 * `4_ChannelPrediction_Wiener.ipynb`: Baseline Method -> Predict future CSI based on a Wiener predictor. Evaluation of the method with fixed prediction horizon.
 
+## Citation
 
-### Other Resources
+```
+@inproceedings{10978279,
+  author={Stephan, Phillip and Euchner, Florian and Brink, Stephan ten},
+  booktitle={2025 IEEE Wireless Communications and Networking Conference (WCNC)}, 
+  title={Channel Charting-Based Channel Prediction on Real-World Distributed Massive MIMO CSI}, 
+  year={2025},
+  pages={1-6},
+  keywords={Wireless communication;Channel estimation;Massive MIMO;Self-supervised learning;Prediction methods;Aging;Telecommunications;Resource management;Next generation networking;Channel state information;AI;channel aging;channel charting;channel prediction;cell-free;distributed;massive MIMO},
+  doi={10.1109/WCNC61545.2025.10978279}}
+```
+
+## Other Resources
 * [Christoph Studer's Channel Charting Website](https://channelcharting.github.io/)
 * [DICHASUS Website](https://dichasus.inue.uni-stuttgart.de/)
 * [Our tutorial on dissimilarity metric-based Channel Charting](https://dichasus.inue.uni-stuttgart.de/tutorials/tutorial/dissimilarity-metric-channelcharting/)
