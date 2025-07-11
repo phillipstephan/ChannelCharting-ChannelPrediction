@@ -7,7 +7,7 @@ This repository contains the source code for the results presented in the paper
 
 presented at the 2025 IEEE Wireless Communications and Networking Conference (WCNC) in Milan, Italy.
 
-* The [presentation slides](2025_WCNC_Presentation_Slides.pdf) can be found in this repository.
+* The [presentation slides](WCNC_2025_Presentation_Slides.pdf) can be found in this repository.
 * A preprint is <a href="https://arxiv.org/abs/2410.11486">available on arXiv</a>.
 
 ## Summary
