@@ -5,7 +5,10 @@ This repository contains the source code for the results presented in the paper
 
 > <a href="https://ieeexplore.ieee.org/abstract/document/10978279">Phillip Stephan, Florian Euchner, Stephan ten Brink: "Channel Charting-Based Channel Prediction on Real-World Distributed Massive MIMO CSI"</a>
 
-presented at the 2025 IEEE Wireless Communications and Networking Conference (WCNC) in Milan, Italy. A preprint is <a href="https://arxiv.org/abs/2410.11486">available on arXiv</a>.
+presented at the 2025 IEEE Wireless Communications and Networking Conference (WCNC) in Milan, Italy.
+
+* The [presentation slides](2025_WCNC_Presentation_Slides.pdf) can be found in this repository.
+* A preprint is <a href="https://arxiv.org/abs/2410.11486">available on arXiv</a>.
 
 ## Summary
 
@@ -14,11 +17,11 @@ presented at the 2025 IEEE Wireless Communications and Networking Conference (WC
 Although it is considered an important advancement for next-generation wireless systems, distributed massive MIMO suffers from decreasing data rates in user mobility scenarios due to channel aging.
 Channel prediction aims to overcome this issue by predicting future channel state information (CSI) from past observations.
 In the paper, we present a novel channel prediction method based on Channel Charting, a self-supervised method for learning a physically meaningful latent representation of the radio environment (the "channel chart") from similarity relationships within the CSI, which enables the prediction of future CSI due to its inherent inertia.
-Demonstrated on a real-world distributed massive MIMO dataset measured with our [https://dichasus.inue.uni-stuttgart.de/](DICHASUS) channel sounder, Channel Charting-based channel prediction shows higher achievable sum rates for larger prediction horizons compared to a Wiener predictor and the outdated CSI.
+Demonstrated on a real-world distributed massive MIMO dataset measured with our [DICHASUS](https://dichasus.inue.uni-stuttgart.de/) channel sounder, Channel Charting-based channel prediction shows higher achievable sum rates for larger prediction horizons compared to a Wiener predictor and the outdated CSI.
 
 ## Prerequisites
 Our code is based on Python, TensorFlow, NumPy, SciPy and Matplotlib.
-Source files are provided as Jupyter Notebooks, which can be opened directly here on GitHub or using e.g. [https://jupyter.org/](JupyterLab).
+Source files are provided as Jupyter Notebooks, which can be opened directly here on GitHub or using e.g. [JupyterLab](https://jupyter.org/).
 
 We run our Channel Charting experiments on a JupyterHub server with NVMe storage, AMD EPYC 7262 8-Core Processor, 64GB RAM, and a NVIDIA GeForce RTX 4080 GPU for accelerating TensorFlow.
 All indications of computation times are measured on this system.
